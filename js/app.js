@@ -1,8 +1,8 @@
 // initialize the app
-angular.module('Demo', []);
+angular.module('BSG', []);
 
 // main controller
-angular.module('Demo').controller('MainCtrl', function($scope, $http) {
+angular.module('BSG').controller('MainCtrl', function($scope, $http) {
     'use strict';
     // ajax
     $http.get('http://localhost:3000/genres').success(function(response) {
