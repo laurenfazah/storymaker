@@ -4,10 +4,18 @@
 		<title>A Day at the Beach</title>
 	</head>
 	<body>
-<!-- 		vars
 
-		fav_food
-		ice_cream_flavor -->
+		<ng-include src="'templates/partials/navbar.html'"></ng-include>
+
+		<h2>Who is this story about?</h2>
+		<p><input type="text" placeholder="name" ng-model="beach.name"></p>
+
+		<h2>What is {{ beach.name }}'s favorite food?</h2>
+		<p><input type="text" placeholder="favorite food" ng-model="beach.fav_food"></p>
+
+		<h2>What is {{ beach.name }}'s favorite ice cream flavor?</h2>
+		<p><input type="text" placeholder="favorite ice cream flavor" ng-model="beach.ice_cream_flavor"></p>
+
 
 		<h1>A Day at the Beach</h1>
 		<br>
@@ -15,13 +23,13 @@
 		We swam. <br>
 		We played in the sand. <br>
 		We even buried dad in the sand. <br>
-		We had so much fun until it was time for lunch. Mom packed our favorite foods...peanut butter and jelly sandwiches, and ham and cheese sandwiches and of course {{ fav_food }}.</p>
+		We had so much fun until it was time for lunch. Mom packed our favorite foods...peanut butter and jelly sandwiches, and ham and cheese sandwiches and of course {{ beach.fav_food }}.</p>
 		<br>
 		<p>We started to eat our lunch and... <br>
 		'Whissh' <br>
 		The seagulls flew down, landed right next to us and took our sandwiches!	We looked at mom and dad and we all began to laugh! </p>
 		<br>
-		<p>Dad took us to the snack bar and we had lunch there.	On the way home from the beach, we stopped for ice cream. I picked out {{ ice_cream_flavor }}. As we were eating the ice cream we looked at each other and we burst out laughing! We couldn’t stop!</p>
+		<p>Dad took us to the snack bar and we had lunch there.	On the way home from the beach, we stopped for ice cream. I picked out {{ beach.ice_cream_flavor }}. As we were eating the ice cream we looked at each other and we burst out laughing! We couldn’t stop!</p>
 		<br>
 		<p>It was such a great day at the beach. <br>
 		Dad said we can go back again next week! <br>
