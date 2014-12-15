@@ -24,6 +24,7 @@ angular.module('BSG').config(function($routeProvider) {
         })
         .when('/airplane', {
             templateUrl: 'templates/stories/airplane.html',
+            controller: "AirplaneCtrl"
         })
         .otherwise({
             redirectTo: '/'
