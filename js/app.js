@@ -26,6 +26,26 @@ angular.module('BSG').config(function($routeProvider) {
             templateUrl: 'templates/stories/airplane.html',
             controller: "AirplaneCtrl"
         })
+        .when('/beach', {
+            templateUrl: 'templates/stories/beach.html',
+            controller: "BeachCtrl"
+        })
+        .when('/fishing', {
+            templateUrl: 'templates/stories/fishing.html',
+            controller: "FishingCtrl"
+        })
+        .when('/sister', {
+            templateUrl: 'templates/stories/sister.html',
+            controller: "SisterCtrl"
+        })
+        .when('/swing', {
+            templateUrl: 'templates/stories/swing.html',
+            controller: "SwingCtrl"
+        })
+        .when('/teddy', {
+            templateUrl: 'templates/stories/teddy.html',
+            controller: "TeddyCtrl"
+        })
         .otherwise({
             redirectTo: '/'
         });
