@@ -1,44 +1,35 @@
-<!DOCTYPE html>
-<html>
-	<head>
-		<title>Fishing with Daddy</title>
-	</head>
-	<body>
+<ng-include src="'templates/partials/navbar.html'"></ng-include>
 
-		<ng-include src="'templates/partials/navbar.html'"></ng-include>
+<h2>Who is this story about?</h2>
+<p><input type="text" placeholder="name" ng-model="fishing.name"></p>
 
-		<h2>Who is this story about?</h2>
-		<p><input type="text" placeholder="name" ng-model="fishing.name"></p>
+<h2>What is {{ fishing.name }}'s favorite color?</h2>
+<p><input type="text" placeholder="favorite color" ng-model="fishing.fav_color"></p>
 
-		<h2>What is {{ fishing.name }}'s favorite color?</h2>
-		<p><input type="text" placeholder="favorite color" ng-model="fishing.fav_color"></p>
-
-		<h2>What is an imaginary pet name you like?</h2>
-		<p><input type="text" placeholder="imaginary pet name" ng-model="fishing.imaginary_pet_name"></p>
+<h2>What is an imaginary pet name you like?</h2>
+<p><input type="text" placeholder="imaginary pet name" ng-model="fishing.imaginary_pet_name"></p>
 
 
-		<h1>Fishing with Daddy</h1>
-		<br>
-		<p>My dad and I went to buy a fishing pole. I bought the biggest and the best fishing pole that I could hold. It was bright {{ fishing.fav_color }} - I couldn't wait to use it!</p>
-		<br>
-		<p>My dad told me we were going fishing tomorrow, just the two of us. I was so excited! Every time dad went fishing, I asked to go with him but he always said I was too little. Well, tomorrow I'll finally get to go with dad. </p>
-		<br>
-		<p>Dad showed me how to use my {{ fishing.fav_color }} fishing pole so I would know how to catch a fish tomorrow. I thought it was so much fun! I had to go to bed early that night because we had to wake up early. Dad said all good fishermen start fishing before the sun rises because the fish wake up early. While I went to bed, dad hooked the boat up to his truck, so I knew I was really going fishing!</p>
-		<br>
-		<p>We woke up very early and had to go to Frank’s Bait and Tackle Shop to get worms. I thought that was the best part of the day. I loved touching the worms. They were cold and slippery. </p>
-		<br>
-		<p>When we arrived at the pond, dad backed his truck up into the pond to unhook the fishing boat. Before we went into the boat, dad put a life vest on me just in case I fell into the water. I would be safe with my life vest on.</p>
-		<br>
-		<p>We went in the boat and dad showed me how to put the worms on the fishing pole then he taught me how to swing the fishing pole over my shoulder.</p>
-		<br>
-		<p>Wow! I think I caught a fish! Dad also showed me how to reel the fish in. I was so excited to have caught my first fish.</p>
-		<br>
-		<p>Dad laughed and said, That’s just seaweed, {{ fishing.name }}, not a fish! You're going to have to keep trying." I was disappointed because I wanted to catch a fish. I kept trying and trying, but I didn’t have any luck.</p>
-		<br>
-		<p>After four hours of fishing I didn’t catch anything. Dad didn’t either. As we were ready to pack up and head to shore, I thought something was tugging at my fishing pole. Dad didn't notice becuase he was pulling the anchor out of the water so we could start the boat. So all by myself I pulled the fish out of the water without dad's help. Then I showed dad what I caught - he was really surprised! He was so proud of me.</p>
-		<br>
-		<p>I knew we had to let the fish back in the pond to be free, so I named it {{ fishing.imaginary_pet_name }} and let dad put it back in the water.</p>
-		<br>
-		<p>That was a perfect ending to a perfect day with dad. I am big enough to go fishing with him. I can’t wait to go again - maybe dad will catch a fish next time!</p>
-	</body>
-</html>
+<h1>Fishing with Daddy</h1>
+<br>
+<p>My dad and I went to buy a fishing pole. I bought the biggest and the best fishing pole that I could hold. It was bright {{ fishing.fav_color }} - I couldn't wait to use it!</p>
+<br>
+<p>My dad told me we were going fishing tomorrow, just the two of us. I was so excited! Every time dad went fishing, I asked to go with him but he always said I was too little. Well, tomorrow I'll finally get to go with dad. </p>
+<br>
+<p>Dad showed me how to use my {{ fishing.fav_color }} fishing pole so I would know how to catch a fish tomorrow. I thought it was so much fun! I had to go to bed early that night because we had to wake up early. Dad said all good fishermen start fishing before the sun rises because the fish wake up early. While I went to bed, dad hooked the boat up to his truck, so I knew I was really going fishing!</p>
+<br>
+<p>We woke up very early and had to go to Frank’s Bait and Tackle Shop to get worms. I thought that was the best part of the day. I loved touching the worms. They were cold and slippery. </p>
+<br>
+<p>When we arrived at the pond, dad backed his truck up into the pond to unhook the fishing boat. Before we went into the boat, dad put a life vest on me just in case I fell into the water. I would be safe with my life vest on.</p>
+<br>
+<p>We went in the boat and dad showed me how to put the worms on the fishing pole then he taught me how to swing the fishing pole over my shoulder.</p>
+<br>
+<p>Wow! I think I caught a fish! Dad also showed me how to reel the fish in. I was so excited to have caught my first fish.</p>
+<br>
+<p>Dad laughed and said, That’s just seaweed, {{ fishing.name }}, not a fish! You're going to have to keep trying." I was disappointed because I wanted to catch a fish. I kept trying and trying, but I didn’t have any luck.</p>
+<br>
+<p>After four hours of fishing I didn’t catch anything. Dad didn’t either. As we were ready to pack up and head to shore, I thought something was tugging at my fishing pole. Dad didn't notice becuase he was pulling the anchor out of the water so we could start the boat. So all by myself I pulled the fish out of the water without dad's help. Then I showed dad what I caught - he was really surprised! He was so proud of me.</p>
+<br>
+<p>I knew we had to let the fish back in the pond to be free, so I named it {{ fishing.imaginary_pet_name }} and let dad put it back in the water.</p>
+<br>
+<p>That was a perfect ending to a perfect day with dad. I am big enough to go fishing with him. I can’t wait to go again - maybe dad will catch a fish next time!</p>

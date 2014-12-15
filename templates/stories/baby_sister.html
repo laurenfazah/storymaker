@@ -1,31 +1,23 @@
-<!DOCTYPE html>
-<html>
-<head>
-	<title>My Baby Sister</title>
-</head>
-	<body>
-		<ng-include src="'templates/partials/navbar.html'"></ng-include>
+<ng-include src="'templates/partials/navbar.html'"></ng-include>
 
-		<h2>Who is this story about?</h2>
-		<p><input type="text" placeholder="name" ng-model="sister.name"></p>
+<h2>Who is this story about?</h2>
+<p><input type="text" placeholder="name" ng-model="sister.name"></p>
 
-		<h2>What is {{ sister.name }}'s favorite type of toy?</h2>
-		<p><input type="text" placeholder="favorite toy" ng-model="sister.fav_toy"></p>
+<h2>What is {{ sister.name }}'s favorite type of toy?</h2>
+<p><input type="text" placeholder="favorite toy" ng-model="sister.fav_toy"></p>
 
-		<h2>Would {{ sister.name }} be a brother or sister to the baby in this story?</h2>
-		<p><input type="text" placeholder="brother or sister" ng-model="sister.brother_or_sister"></p>
-		
+<h2>Would {{ sister.name }} be a brother or sister to the baby in this story?</h2>
+<p><input type="text" placeholder="brother or sister" ng-model="sister.brother_or_sister"></p>
 
-		<h1></h1>My Baby Sister
 
-		<p>My dad woke me up saying "{{ sister.name }}, come here! We need to take you to Grandma’s house." He had to take mom to the hospital.</p>
-		<br>
-		<p>When he picked me up, he said he had a surprise for me. I thought it was a {{ sister.fav_toy }}, but dad said "No, it's a baby sister."</p>
-		<br>
-		<p>He took me to the hospital to see my mommy and my new baby sister. When I saw her, I thought she was a baby doll. I was her big {{ sister.brother_or_sister }} now!</p>
-		<br>
-		<p>When my mom and my baby sister came home, I helped my mom change my sister's diaper and feed her. I was mom’s little helper. I was my baby’s big {{ sister.brother_or_sister }}.</p>
-		<br>
-		<p>I love my new baby sister and she loves me too!</p>
-	</body>
-</html>
+<h1></h1>My Baby Sister
+
+<p>My dad woke me up saying "{{ sister.name }}, come here! We need to take you to Grandma’s house." He had to take mom to the hospital.</p>
+<br>
+<p>When he picked me up, he said he had a surprise for me. I thought it was a {{ sister.fav_toy }}, but dad said "No, it's a baby sister."</p>
+<br>
+<p>He took me to the hospital to see my mommy and my new baby sister. When I saw her, I thought she was a baby doll. I was her big {{ sister.brother_or_sister }} now!</p>
+<br>
+<p>When my mom and my baby sister came home, I helped my mom change my sister's diaper and feed her. I was mom’s little helper. I was my baby’s big {{ sister.brother_or_sister }}.</p>
+<br>
+<p>I love my new baby sister and she loves me too!</p>

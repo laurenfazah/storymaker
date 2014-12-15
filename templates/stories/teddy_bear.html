@@ -1,38 +1,29 @@
-<!DOCTYPE html>
-<html>
-	<head>
-		<title>My Favorite Teddy “Bear”</title>
-	</head>
-	<body>
-		 
-		<ng-include src="'templates/partials/navbar.html'"></ng-include>
+<ng-include src="'templates/partials/navbar.html'"></ng-include>
 
-		<h2>Who is this story about?</h2>
-		<p><input type="text" placeholder="name" ng-model="teddy.name"></p>
+<h2>Who is this story about?</h2>
+<p><input type="text" placeholder="name" ng-model="teddy.name"></p>
 
-		<h2>What is {{ teddy.name }}'s favorite animal?</h2>
-		<p><input type="text" placeholder="favorite animal" ng-model="teddy.fav_animal"></p>
+<h2>What is {{ teddy.name }}'s favorite animal?</h2>
+<p><input type="text" placeholder="favorite animal" ng-model="teddy.fav_animal"></p>
 
-		<h2>What is an imaginary toy name {{ tedd.name }} likes?</h2>
-		<p><input type="text" placeholder="imaginary toy name" ng-model="teddy.toy_name"></p>
-		<!-- vars
+<h2>What is an imaginary toy name {{ tedd.name }} likes?</h2>
+<p><input type="text" placeholder="imaginary toy name" ng-model="teddy.toy_name"></p>
+<!-- vars
 
-		fav_animal
-		toy_name -->
+fav_animal
+toy_name -->
 
-		<h1>My Favorite Teddy “Bear”</h1>
-		<br>
-		<p>My favorite teddy bear is small and cuddly. <br>
-		Its name is {{ teddy.toy_name }}. <br>
-		I sleep with {{ teddy.toy_name }} every night. <br>
-		I take my teddy bear with me wherever I go. <br>
-		<br>
-		<p>One day, I took my teddy bear to school and the kids laughed at me. <br>
-		I didn’t know why. <br>
-		I went home and told my mom I was upset. <br>
-		Mommy asked what was wrong and I told her the children laughed at {{ teddy.toy_name }} when I showed them. <br>
-		Mom told me that my teddy bear was really a {{ teddy.fav_animal }}! <br>
-		I think that made {{ teddy.toy_name }} even more special. <br>
-		I really love my teddy {{ teddy.fav_animal }}! <br></p>
-	</body>
-</html>
+<h1>My Favorite Teddy “Bear”</h1>
+<br>
+<p>My favorite teddy bear is small and cuddly. <br>
+Its name is {{ teddy.toy_name }}. <br>
+I sleep with {{ teddy.toy_name }} every night. <br>
+I take my teddy bear with me wherever I go. <br>
+<br>
+<p>One day, I took my teddy bear to school and the kids laughed at me. <br>
+I didn’t know why. <br>
+I went home and told my mom I was upset. <br>
+Mommy asked what was wrong and I told her the children laughed at {{ teddy.toy_name }} when I showed them. <br>
+Mom told me that my teddy bear was really a {{ teddy.fav_animal }}! <br>
+I think that made {{ teddy.toy_name }} even more special. <br>
+I really love my teddy {{ teddy.fav_animal }}! <br></p>
