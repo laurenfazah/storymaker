@@ -1,11 +1,28 @@
 // initialize the app
-angular.module('BSG', []);
+angular.module('BSG', [
+    'ngRoute'
+]);
 
-// main controller
-angular.module('BSG').controller('MainCtrl', function($scope, $http) {
+angular.module('BSG').config(function($routeProvider) {
     'use strict';
-    // ajax
-    $http.get('http://localhost:3000/genres').success(function(response) {
-        $scope.genres = response;
-    });
+
+    $routeProvider
+        .when('/', {
+            templateUrl: 'templates/home.html'
+        })
+        .when('/users', {
+            templateUrl: 'templates/users.html',
+            controller: 'UserCtrl'
+        })
+        .when('/stories', {
+            templateUrl: 'templates/stories.html',
+            controller: 'StoryCtrl'
+        })
+        .when('/genres', {
+            templateUrl: 'templates/genres.html',
+            controller: 'GenreCtrl'
+        })
+        .otherwise({
+            redirectTo: '/'
+        });
 });

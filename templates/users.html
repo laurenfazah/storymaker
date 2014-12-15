@@ -1,0 +1,23 @@
+<div class="container">
+    <h2>Users</h2>
+
+	<ul>
+	    <li ng-repeat="user in users">{{ user.name }} {{ user.age }} <a ng-click="editUser(user)">update</a> <a ng-click="deleteUser(user)">delete</a></li>
+	</ul>
+
+	<form role="form" name="createUserForm" ng-submit="upsertUser(user)" novalidate>
+        <br>
+        
+        <div class="form-group">
+            <label for="name">Name</label>
+            <input type="text" class="form-control" id="name" ng-model="user.name" required>
+        </div>
+        
+        <div class="form-group">
+            <label for="age">Age</label>
+            <input type="text" class="form-control" id="age" ng-model="user.age" required>
+        </div>
+
+        <button type="submit" class="btn btn-primary" ng-disabled="createUserForm.$invalid">Submit</button>
+    </form>
+</div>

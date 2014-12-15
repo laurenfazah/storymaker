@@ -1,0 +1,22 @@
+<div class="container">
+    <h2>Stories</h2>
+
+	<ul>
+	    <li ng-repeat="story in stories">{{ story.title }} <br> {{ story. body }} <br>
+        <a ng-click="editStory(story)">update</a> <a ng-click="deleteStory(story)">delete</a></li>
+	</ul>
+
+	<form role="form" name="createStoryForm" ng-submit="upsertStory(story)" novalidate>
+        <br>
+        
+        <div class="form-group">
+            <label for="story">Title</label>
+            <input type="text" class="form-control" id="story" ng-model="story.title" required>
+
+            <label for="story">Body</label>
+            <input type="text" class="form-control" id="story" ng-model="story.body" required>
+        </div>
+
+        <button type="submit" class="btn btn-primary" ng-disabled="createStoryForm.$invalid">Submit</button>
+    </form>
+</div>

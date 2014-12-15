@@ -1,21 +1,32 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-<meta charset="utf-8">
-<title>Bedtime Story Generator</title>
-<script src="bower_components/angular/angular.js"></script>
-</head>
-<body ng-app="BSG">
+	<head>
+		<meta charset="utf-8">
+		<meta http-equiv="X-UA-Compatible" content="IE=edge">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<title>BSG</title>
+		<link href="bower_components/bootstrap/dist/css/bootstrap.css" rel="stylesheet">
+		<link href="css/app.css" rel="stylesheet">
+	</head>
 
-<div class="container" ng-controller="MainCtrl">
-	<h2>Genres</h2>
-	
-	<ul>
-	    <li ng-repeat="genre in genres">{{ genre.story_genre }}</li>
-	</ul>
-</div>
+	<body ng-app="BSG">
 
-<script src="js/app.js"></script>
+		<ng-include src="'templates/partials/navbar.html'"></ng-include>
 
-</body>
+		<ng-view></ng-view>
+
+		<!-- bower components -->
+		<script src="bower_components/jquery/dist/jquery.js"></script>
+		<script src="bower_components/angular/angular.js"></script>
+		<script src="bower_components/angular-route/angular-route.js"></script>
+		<script src="bower_components/bootstrap/dist/js/bootstrap.js"></script>
+		
+		<!-- JS files -->
+		<script src="js/app.js"></script>
+		<script src="js/genre.controller.js"></script>
+		<script src="js/nav.controller.js"></script>
+		<script src="js/story.controller.js"></script>
+		<script src="js/user.controller.js"></script>
+
+	</body>
 </html>

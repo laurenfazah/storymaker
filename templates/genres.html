@@ -1,0 +1,23 @@
+<div class="container">
+    <h2>Genres</h2>
+
+	<ul>
+	    <li ng-repeat="genre in genres">{{ genre.story_genre }} {{ genre.story_id }} <a ng-click="editUser(user)">update</a> <a ng-click="deleteUser(user)">delete</a></li>
+	</ul>
+
+	<form role="form" name="createUserForm" ng-submit="upsertUser(user)" novalidate>
+        <br>
+        
+        <div class="form-group">
+            <label for="name">Genre </label>
+            <input type="text" class="form-control" id="story_genre" ng-model="genre.story_genre" required>
+        </div>
+        
+        <div class="form-group">
+            <label for="age">Story ID</label>
+            <input type="text" class="form-control" id="story_id" ng-model="genre.story_id" required>
+        </div>
+
+        <button type="submit" class="btn btn-primary" ng-disabled="createUserForm.$invalid">Submit</button>
+    </form>
+</div>
