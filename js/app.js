@@ -22,6 +22,9 @@ angular.module('BSG').config(function($routeProvider) {
             templateUrl: 'templates/genres.html',
             controller: 'GenreCtrl'
         })
+        .when('/airplane', {
+            templateUrl: 'templates/stories/airplane.html',
+        })
         .otherwise({
             redirectTo: '/'
         });
