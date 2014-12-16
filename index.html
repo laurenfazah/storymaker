@@ -7,22 +7,28 @@
 		<title>BSG</title>
 		<link href="bower_components/bootstrap/dist/css/bootstrap.css" rel="stylesheet">
 		<link href="css/app.css" rel="stylesheet">
+		<script src="bower_components/jquery/dist/jquery.js"></script>
 	</head>
 
 	<body ng-app="BSG">
 
 		<ng-include src="'templates/partials/navbar.html'"></ng-include>
-
+		<div id="canvasDiv"></div>
+		<script type="text/javascript"> 
+			$(document).ready(function() {
+				prepareCanvas();
+			});
+		</script>
 		<ng-view></ng-view>
 
 		<!-- bower components -->
-		<script src="bower_components/jquery/dist/jquery.js"></script>
 		<script src="bower_components/angular/angular.js"></script>
 		<script src="bower_components/angular-route/angular-route.js"></script>
 		<script src="bower_components/bootstrap/dist/js/bootstrap.js"></script>
 		
 		<!-- JS files -->
 		<script src="js/app.js"></script>
+		<script src="js/canvas.js"></script>
 		<script src="js/genre.controller.js"></script>
 		<script src="js/nav.controller.js"></script>
 		<script src="js/story.controller.js"></script>
@@ -36,5 +42,10 @@
 		<script src="js/story_controllers/swing.controller.js"></script>
 		<script src="js/story_controllers/teddy.controller.js"></script>
 
+		<!-- prompt controllers -->
+		<script src="js/prompt_controllers/airplane_prompts.controller.js"></script>
+
+		<!-- factories -->
+		<script src="js/services/airplaneFactory.js"></script>
 	</body>
 </html>

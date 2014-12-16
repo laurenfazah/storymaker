@@ -1,4 +1,4 @@
-angular.module('BSG').controller('AirplaneCtrl', function($scope, airplaneFactory) {
+angular.module('BSG').controller('AirplanePromptsCtrl', function($scope, airplaneFactory) {
     'use strict';
 
 	  $scope.name = airplaneFactory.name;

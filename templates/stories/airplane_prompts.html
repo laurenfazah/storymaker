@@ -1,10 +1,12 @@
 <ng-include src="'templates/partials/navbar.html'"></ng-include>
 
 <h2>Who is this story about?</h2>
-<p><input type="text" placeholder="name" ng-model="airplane.name"></p>
+<p><input type="text" placeholder="name" ng-model="name"></p>
 
-<h2>What is {{ airplane.name }}'s last name?</h2>
-<p><input type="text" placeholder="last name" ng-model="crtl.airplane.last_name"></p>
+<h2>What is {{ name }}'s last name?</h2>
+<p><input type="text" placeholder="last name" ng-model="crtl.last_name"></p>
 
-<h2>What is {{ airplane.name }}'s favorite color?</h2>
-<p><input type="text" placeholder="favorite color" ng-model="airplane.color"></p>
+<h2>What is {{ name }}'s favorite color?</h2>
+<p><input type="text" placeholder="favorite color" ng-model="color"></p>
+
+<button type="submit" ng-click="submit()">Submit</button>

@@ -28,7 +28,7 @@ angular.module('BSG').config(function($routeProvider) {
         })
         .when('/airplaneprompts', {
             templateUrl: 'templates/stories/airplane_prompts.html',
-            controller: "AirplaneCtrl"
+            controller: "AirplanePromptsCtrl"
         })
         .when('/beach', {
             templateUrl: 'templates/stories/beach.html',
