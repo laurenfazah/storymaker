@@ -10,9 +10,8 @@ angular.module('BSG').config(function($routeProvider) {
         .when('/', {
             templateUrl: 'templates/home.html'
         })
-        .when('/users', {
-            templateUrl: 'templates/users.html',
-            controller: 'UserCtrl'
+        .when('/about', {
+            templateUrl: 'templates/about.html',
         })
         .when('/stories', {
             templateUrl: 'templates/stories.html',
@@ -34,21 +33,41 @@ angular.module('BSG').config(function($routeProvider) {
             templateUrl: 'templates/stories/beach.html',
             controller: "BeachCtrl"
         })
+        .when('beachprompts', {
+            templateUrl: 'templates/stories/beach_prompts.html',
+            controller: "BeachPromptsCtrl"
+        })
         .when('/fishing', {
             templateUrl: 'templates/stories/fishing.html',
             controller: "FishingCtrl"
+        })
+        .when('/fishingprompts', {
+            templateUrl: 'templates/stories/fishing_prompts.html',
+            controller: "FishingPromptsCtrl"
         })
         .when('/sister', {
             templateUrl: 'templates/stories/sister.html',
             controller: "SisterCtrl"
         })
+        .when('/sisterprompts', {
+            templateUrl: 'templates/stories/sister_prompts.html',
+            controller: "SisterPromptsCtrl"
+        })
         .when('/swing', {
             templateUrl: 'templates/stories/swing.html',
             controller: "SwingCtrl"
         })
+        .when('/swingprompts', {
+            templateUrl: 'templates/stories/swing_prompts.html',
+            controller: "SwingPromptsCtrl"
+        })
         .when('/teddy', {
             templateUrl: 'templates/stories/teddy.html',
             controller: "TeddyCtrl"
+        })
+        .when('/teddyprompts', {
+            templateUrl: 'templates/stories/teddy_prompts.html',
+            controller: "TeddyPromptsCtrl"
         })
         .otherwise({
             redirectTo: '/'
