@@ -1,9 +1,21 @@
 // initialize the app
 angular.module('BSG', [
     'ngRoute'
-]).run(function(airplaneFactory){
-    
+]).run(function(airplaneFactory, beachFactory, fishingFactory, sisterFactory, swingFactory, teddyFactory){
+
 });
+// .run(function(beachFactory){
+    
+// }).run(function(fishingFactory){
+    
+// }).run(function(sisterFactory){
+    
+// }).run(function(swingFactory){
+    
+// }).run(function(teddyFactory){
+    
+// })
+
 
 angular.module('BSG').config(function($routeProvider) {
     'use strict';
