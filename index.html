@@ -13,6 +13,35 @@
 	<body ng-app="BSG">
 
 		<ng-include src="'templates/partials/navbar.html'"></ng-include>
+		
+		<!-- canvas -->
+
+		<ul>
+			<li>
+				Clear
+				<button id="clear" type="button">Clear</button>
+			</li>
+			<li>
+				Choose a color:
+				<button id="colorPurple" type="button">Purple</button>
+				<button id="colorGreen" type="button">Green</button>
+				<button id="colorYellow" type="button">Yellow</button>
+				<button id="colorBrown" type="button">Brown</button>
+			</li>			
+			<li>
+				Choose a size:
+				<button id="chooseSmallTools" type="button">Small</button>
+				<button id="chooseNormalTools" type="button">Normal</button>
+				<button id="chooseLargeTools" type="button">Large</button>
+				<button id="chooseHugeTools" type="button">Huge</button>
+			</li>
+			<li>
+				Choose a tool:
+				<button id="chooseCrayonTools" type="button">Crayon</button>
+				<button id="chooseMarkerTools" type="button">Marker</button>
+				<button id="chooseEraserTools" type="button">Eraser</button>
+			</li>
+		</ul>
 		<div id="canvasDiv"></div>
 		<script type="text/javascript"> 
 			$(document).ready(function() {
@@ -29,6 +58,7 @@
 		<!-- JS files -->
 		<script src="js/app.js"></script>
 		<script src="js/canvas.js"></script>
+		<script src="js/canvas2.js"></script>
 		<script src="js/genre.controller.js"></script>
 		<script src="js/nav.controller.js"></script>
 		<script src="js/story.controller.js"></script>
