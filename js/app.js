@@ -1,7 +1,9 @@
 // initialize the app
 angular.module('BSG', [
     'ngRoute'
-]);
+]).run(function(airplaneFactory){
+    
+});
 
 angular.module('BSG').config(function($routeProvider) {
     'use strict';
