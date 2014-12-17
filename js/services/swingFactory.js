@@ -1,18 +1,27 @@
-angular.module('BSG').factory('swingFactory', function() {
-    var name = '';
-    var fav_color = '';
-    var friend_name = '';
+angular.module('BSG').factory('swingFactory', ['$q',function($q) {
+    
+    var user = [];
 
-    function setData(n, ln, c) {
-        name = n;
-        fav_color = ln;
-        friend_name = c;
+    var name, fav_color, friend_name;
+
+    var setData = function(n, fc, fn) {
+        var temp = [];
+        temp.push(n);
+        temp.push(fc);
+        temp.push(fn);
+
+        angular.copy(temp, user);
+        
+        var deferred = $q.defer();
+        deferred.resolve([n,fc,fn]);
+        return deferred.promise;
     }
 
     return {
+        user: user,
         name: name,
         fav_color: fav_color,
         friend_name: friend_name,
         setData: setData
     }
-})
+}]) 

@@ -1,18 +1,27 @@
-angular.module('BSG').factory('beachFactory', function() {
-    var name = '';
-    var fav_food = '';
-    var ice_cream_flavor = '';
+angular.module('BSG').factory('beachFactory', ['$q',function($q) {
+    
+    var user = [];
 
-    function setData(n, ln, c) {
-        name = n;
-        fav_food = ln;
-        ice_cream_flavor = c;
+    var name, fav_food, ice_cream_flavor;
+
+    var setData = function(n, ff, ic) {
+        var temp = [];
+        temp.push(n);
+        temp.push(ff);
+        temp.push(ic);
+
+        angular.copy(temp, user);
+        
+        var deferred = $q.defer();
+        deferred.resolve([n,ff,ic]);
+        return deferred.promise;
     }
 
     return {
+        user: user,
         name: name,
         fav_food: fav_food,
         ice_cream_flavor: ice_cream_flavor,
         setData: setData
     }
-})
+}]) 

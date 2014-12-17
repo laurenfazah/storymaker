@@ -15,20 +15,8 @@ angular.module('BSG').factory('airplaneFactory', ['$q',function($q) {
         var deferred = $q.defer();
         deferred.resolve([n,ln,c]);
         return deferred.promise;
-        /*name = n;
-        last_name = ln;
-        color = c;*/
     }
 
-    /*
-    var deferred = $q.defer();
-
-        $timeout(function() {
-          deferred.resolve(['Hello', 'world!']);
-        }, 2000);
-
-        return deferred.promise;
-    */
     return {
         user: user,
         name: name,
