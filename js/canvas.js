@@ -108,7 +108,7 @@ function prepareCanvas()
 	
 	outlineImage.onload = function() { resourceLoaded(); 
 	};
-	outlineImage.src = "images/watermelon-duck-outline.png";
+	outlineImage.src = "images/crayon-texture.png";
 
 	// Add mouse events
 	// ----------------

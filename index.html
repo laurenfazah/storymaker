@@ -8,46 +8,31 @@
 		<link href="bower_components/bootstrap/dist/css/bootstrap.css" rel="stylesheet">
 		<link href="css/app.css" rel="stylesheet">
 		<script src="bower_components/jquery/dist/jquery.js"></script>
+		<script src="js/sketch.js"></script>
 	</head>
 
 	<body ng-app="BSG">
 
 		<ng-include src="'templates/partials/navbar.html'"></ng-include>
 		
-		<!-- canvas -->
+		<!-- sketch.js -->
 
-		<ul>
-			<li>
-				Clear
-				<button id="clear" type="button">Clear</button>
-			</li>
-			<li>
-				Choose a color:
-				<button id="colorPurple" type="button">Purple</button>
-				<button id="colorGreen" type="button">Green</button>
-				<button id="colorYellow" type="button">Yellow</button>
-				<button id="colorBrown" type="button">Brown</button>
-			</li>			
-			<li>
-				Choose a size:
-				<button id="chooseSmallTools" type="button">Small</button>
-				<button id="chooseNormalTools" type="button">Normal</button>
-				<button id="chooseLargeTools" type="button">Large</button>
-				<button id="chooseHugeTools" type="button">Huge</button>
-			</li>
-			<li>
-				Choose a tool:
-				<button id="chooseCrayonTools" type="button">Crayon</button>
-				<button id="chooseMarkerTools" type="button">Marker</button>
-				<button id="chooseEraserTools" type="button">Eraser</button>
-			</li>
-		</ul>
-		<div id="canvasDiv"></div>
-		<script type="text/javascript"> 
-			$(document).ready(function() {
-				prepareCanvas();
-			});
+		<div class="tools">
+			pick a color:
+		</div>
+		<canvas id="colors_sketch" width="800" height="300" padding-top="50px"></canvas>
+		<script type="text/javascript">
+		  $(function() {
+		    $.each(['#f00', '#ff0', '#0f0', '#0ff', '#00f', '#f0f', '#000', '#fff'], function() {
+		      $('.tools').append("<a href='#colors_sketch' data-color='" + this + "' style='width: 10px; background: " + this + ";'> ____ </a> ");
+		    });
+		    $.each([3, 5, 10, 15], function() {
+		      $('#colors_demo .tools').append("<a href='#colors_sketch' data-size='" + this + "' style='background: #ccc'>" + this + "</a> ");
+		    });
+		    $('#colors_sketch').sketch();
+		  });
 		</script>
+
 		<ng-view></ng-view>
 
 		<!-- bower components -->
@@ -57,8 +42,6 @@
 		
 		<!-- JS files -->
 		<script src="js/app.js"></script>
-		<script src="js/canvas.js"></script>
-		<script src="js/canvas2.js"></script>
 		<script src="js/genre.controller.js"></script>
 		<script src="js/nav.controller.js"></script>
 		<script src="js/story.controller.js"></script>
