@@ -5,3 +5,32 @@ body {
 a {
 	cursor: pointer;
 }
+
+.tools a {
+	height: 40px;
+	line-height: 40px;
+	margin-top: 10px;
+	padding: 0 20px;
+	vertical-align: middle;
+	text-align: center;
+	text-decoration: none;
+	display: inline-block;
+	color: black;
+	font-weight: bold;
+	border-radius: 100%;
+}
+
+canvas {
+	/*border: 1px solid black;*/
+}
+
+/*.tools {
+	padding-top: 50px;
+	float: right; 
+	width: 100px;
+}
+
+canvas#colors_sketch {
+	width: 800px;
+	height: 300px;
+}*/
