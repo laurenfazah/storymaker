@@ -1,5 +1,23 @@
 <ng-include src="'templates/partials/navbar.html'"></ng-include>
 
+<!-- sketch.js -->
+
+<div class="tools">
+	pick a color:
+</div>
+<canvas id="colors_sketch" width="800" height="300" padding-top="50px"></canvas>
+<script type="text/javascript">
+  $(function() {
+    $.each(['#f00', '#ff0', '#0f0', '#0ff', '#00f', '#f0f', '#000', '#fff'], function() {
+      $('.tools').append("<span><a href='#colors_sketch' data-color='" + this + "' style='width: 10px; background: " + this + ";'>|  _  |</a></span> ");
+    });
+    $.each([3, 5, 10, 15], function() {
+      $('.tools').append("<a href='#colors_sketch' data-size='" + this + "' style='background: #ccc'>" + "brush size " + this + "</a> ");
+    });
+    $('#colors_sketch').sketch();
+  });
+</script>
+
 <h1>Fishing with Daddy</h1>
 <br>
 <p>My dad and I went to buy a fishing pole. I bought the biggest and the best fishing pole that I could hold. It was bright {{ user[1] }} - I couldn't wait to use it!</p>
