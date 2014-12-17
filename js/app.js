@@ -33,7 +33,7 @@ angular.module('BSG').config(function($routeProvider) {
             templateUrl: 'templates/stories/beach.html',
             controller: "BeachCtrl"
         })
-        .when('beachprompts', {
+        .when('/beachprompts', {
             templateUrl: 'templates/stories/beach_prompts.html',
             controller: "BeachPromptsCtrl"
         })
