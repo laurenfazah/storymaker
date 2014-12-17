@@ -6,6 +6,11 @@ a {
 	cursor: pointer;
 }
 
+span a {
+	height: 40px;
+	width: 40px;
+}
+
 /*.tools {
 	padding-top: 50px;
 	float: right; 
