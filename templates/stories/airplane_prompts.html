@@ -1,13 +1,10 @@
 <ng-include src="'templates/partials/navbar.html'"></ng-include>
-
-<h2>Who is this story about?</h2>
-<p><input type="text" placeholder="name" ng-model="name" ng-change="updateFactory()"></p>
-
-<h2>What is {{ name }}'s last name?</h2>
-<p><input type="text" placeholder="last name" ng-model="last_name" ng-change="updateFactory()"></p>
-
-<h2>What is {{ name }}'s favorite color?</h2>
-<p><input type="text" placeholder="favorite color" ng-model="color"></p>
-
-<!-- <button type="submit" ng-click="submit(name, last_name, color)">Submit</button> -->
-<button type=""><a ng-href="#/airplane" title="Airplane Story">Continue to Story</a></button>
+<form ng-submit="updateFactory(user)">
+	<h2>Who is this story about?</h2>
+	<p><input type="text" placeholder="name" ng-model="user.name"></p>
+	<h2>What is {{ user.name }}'s last name?</h2>
+	<p><input type="text" placeholder="last name" ng-model="user.last_name"></p>
+	<h2>What is {{ user.name }}'s favorite color?</h2>
+	<p><input type="text" placeholder="favorite color" ng-model="user.color"></p>
+	<input type="submit" value="Continue To Story" />
+</form>

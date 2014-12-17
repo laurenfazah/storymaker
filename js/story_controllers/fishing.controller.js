@@ -1,8 +1,10 @@
-angular.module('BSG').controller('FishingCtrl', function($scope) {
+angular.module('BSG').controller('FishingCtrl', function($scope, fishingFactory) {
     'use strict';
-  $scope.fishing = {
-       name: '',
-       fav_color: '',
-       imaginary_pet_name: ''
-  };
-});
+  $scope.user = fishingFactory.user;
+
+	var updateFactory = function() {
+	    
+	    fishingFactory.setData($scope.name, $scope.fav_color, $scope.imaginary_pet_name);
+	}
+
+}); 

@@ -1,13 +1,10 @@
-// angular.module('BSG').controller('AirplaneCtrl', ['$scope', 'airplaneFactory', function($scope, airplaneFactory) {
-//     'use strict';
-
 angular.module('BSG').controller('AirplaneCtrl', function($scope, airplaneFactory) {
     'use strict';
+  $scope.user = airplaneFactory.user;
 
-	  $scope.name = airplaneFactory.name;
-	  $scope.last_name = airplaneFactory.last_name;
-	  $scope.color = airplaneFactory.color;
+	var updateFactory = function() {
+	    
+	    airplaneFactory.setData($scope.name, $scope.last_name, $scope.color);
+	}
 
-});
-
-// }]);
+}); 

@@ -1,8 +1,10 @@
-angular.module('BSG').controller('SwingCtrl', function($scope) {
+angular.module('BSG').controller('SwingCtrl', function($scope, swingFactory) {
     'use strict';
-  $scope.swing = {
-       name: '',
-       fav_color: '',
-       friend_name: ''
-  };
-});
+  $scope.user = swingFactory.user;
+
+	var updateFactory = function() {
+	    
+	    swingFactory.setData($scope.name, $scope.fav_color, $scope.friend_name);
+	}
+
+}); 

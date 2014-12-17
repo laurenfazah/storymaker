@@ -1,18 +1,18 @@
 <ng-include src="'templates/partials/navbar.html'"></ng-include>
 
-<h1>My Favorite Teddy “Bear”</h1>
+<h1>{{ user[0] }}'s Favorite Teddy “Bear”</h1>
 <br>
 <p>My favorite teddy bear is small and cuddly. <br>
-Its name is {{ teddy.toy_name }}. <br>
-I sleep with {{ teddy.toy_name }} every night. <br>
+Its name is {{ user[2] }}. <br>
+I sleep with {{ user[2] }} every night. <br>
 I take my teddy bear with me wherever I go. <br>
 <br>
 <p>One day, I took my teddy bear to school and the kids laughed at me. <br>
 I didn’t know why. <br>
 I went home and told my mom I was upset. <br>
-Mommy asked what was wrong and I told her the children laughed at {{ teddy.toy_name }} when I showed them. <br>
-Mom told me that my teddy bear was really a {{ teddy.fav_animal }}! <br>
-I think that made {{ teddy.toy_name }} even more special. <br>
-I really love my teddy {{ teddy.fav_animal }}! <br></p>
+Mommy asked what was wrong and I told her the children laughed at {{ user[2] }} when I showed them. <br>
+Mom told me that my teddy bear was really a {{ user[1] }}! <br>
+I think that made {{ user[2] }} even more special. <br>
+I really love my teddy {{ user[1] }}! <br></p>
 
 <script>var pfHeaderImgUrl = '';var pfHeaderTagline = '';var pfdisableClickToDel = 0;var pfHideImages = 0;var pfImageDisplayStyle = 'right';var pfDisablePDF = 0;var pfDisableEmail = 0;var pfDisablePrint = 0;var pfCustomCSS = '';var pfBtVersion='1';(function(){var js, pf;pf = document.createElement('script');pf.type = 'text/javascript';if('https:' == document.location.protocol){js='https://pf-cdn.printfriendly.com/ssl/main.js'}else{js='http://cdn.printfriendly.com/printfriendly.js'}pf.src=js;document.getElementsByTagName('head')[0].appendChild(pf)})();</script><a href="http://www.printfriendly.com" style="color:#6D9F00;text-decoration:none;" class="printfriendly" onclick="window.print();return false;" title="Printer Friendly and PDF"><img style="border:none;-webkit-box-shadow:none;box-shadow:none;margin:0 6px"  src="http://cdn.printfriendly.com/pf-print-icon.gif" width="16" height="15" alt="Print Friendly Version of this page" />Print <img style="border:none;-webkit-box-shadow:none;box-shadow:none;margin:0 6px"  src="http://cdn.printfriendly.com/pf-pdf-icon.gif" width="12" height="12" alt="Get a PDF version of this webpage" />PDF</a>
