@@ -58,6 +58,10 @@ div#home-page, #about-page {
   border-right: 10px #5fb49c solid;
 }
 
+#app-title {
+  font-size: 78px;
+}
+
 .navbar.navbar-inverse.navbar-fixed-top {
   height: 65px;
   background-color: #414288;
