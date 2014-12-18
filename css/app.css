@@ -21,11 +21,6 @@ a {
 	border-radius: 100%;
 }
 
-body.story-body {
-	background: url("images/ricepaper_v3.png");
-	background-repeat: repeat;
-}
-
 canvas {
 	/*border: 1px solid black;*/
 }
@@ -97,4 +92,14 @@ a.corner-ribbon{
 }
 .corner-ribbon:after {
   right: 0;
+}
+
+/*body {
+  background: url('https://s3.amazonaws.com/uploads.hipchat.com/39979/1226463/LArSOxoEeyOLmY5/156H.jpg');
+  background-size: cover;
+}
+*/
+body {
+  background: url("https://s3.amazonaws.com/uploads.hipchat.com/39979/1226463/PrFPiTUBghJnCiE/linedpaper.png");
+  background-repeat: repeat;
 }

@@ -1,7 +1,7 @@
 angular.module('BSG').controller('UserCtrl', function($scope, $http) {
     'use strict';
 
-    $http.get('http://localhost:3000/users').success(function(response) {
+    $http.get('http://dry-ocean-9343.herokuapp.com/users').success(function(response) {
         $scope.users = response;
     });
 
@@ -11,9 +11,9 @@ angular.module('BSG').controller('UserCtrl', function($scope, $http) {
         };
         
         if (user.id) {
-            $http.put('http://localhost:3000/users/' + user.id, params);
+            $http.put('http://dry-ocean-9343.herokuapp.com/users/' + user.id, params);
         } else {
-            $http.post('http://localhost:3000/users', params).success(function(response) {
+            $http.post('http://dry-ocean-9343.herokuapp.com/users', params).success(function(response) {
                 $scope.users.push(response);
             });
         }
@@ -26,7 +26,7 @@ angular.module('BSG').controller('UserCtrl', function($scope, $http) {
     };
 
     $scope.deleteUser = function(user) {
-        $http.delete('http://localhost:3000/users/' + user.id).success(function(response) {
+        $http.delete('http://dry-ocean-9343.herokuapp.com/users/' + user.id).success(function(response) {
             // remove from users array by id
             for (var i = 0; i < $scope.users.length; i++){
                 if ($scope.users[i].id == user.id) {
