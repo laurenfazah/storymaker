@@ -13,6 +13,24 @@ body {
   background-repeat: repeat;
 }
 
+.navbar.navbar-inverse.navbar-fixed-top {
+  height: 65px;
+}
+
+.nav-tab {
+  position: relative;
+  padding-top: 10px;
+}
+
+#logo {
+  height: 55px;
+  width: 55px;
+  padding-bottom: 10px;
+  position: relative;
+  -webkit-filter: invert(100%);
+  filter: invert(100%);
+}
+
 .storyText {
   font-family: 'Fresca', sans-serif;
   font-size: 1.25em;
