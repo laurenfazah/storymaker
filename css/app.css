@@ -37,12 +37,17 @@ li {
 .btn.btn-danger {
   background-color: #5fb49c;
   border-color: #5fb49c;
+  font-size: 110%;
 }
 
 body {
   padding-top: 65px;
   background: url("https://s3.amazonaws.com/uploads.hipchat.com/39979/1226463/PrFPiTUBghJnCiE/linedpaper.png");
   background-repeat: repeat;
+}
+
+.container.story-page, input {
+  text-align: center;
 }
 
 div#home-page, #about-page {
@@ -126,6 +131,7 @@ canvas {
 	text-align: center;
 	border-radius: 10px;
 	background-color: white;
+  border: 1px silver solid;
 }
 
 /* beta ribbon wrapper */
