@@ -1,34 +1,40 @@
 <ng-include src="'templates/partials/navbar.html'"></ng-include>
 
-<!-- sketch.js -->
+<body class="story-body">
 
-<div class="tools">
+	<!-- sketch.js -->
+
+	<div class="tools">
+	</div>
+	<canvas id="colors_sketch" width="800" height="300" padding-top="50px"></canvas>
+	<script type="text/javascript">
+	  $(function() {
+	    $.each(['#3c8d7f', '#86b460', '#cebd4e', '#d45b5b', '#5f5758', '#8D3C4A', '#000', '#fff'], function() {
+	      $('.tools').append("<span><a href='#colors_sketch' data-color='" + this + "' style='width: 10px; background: " + this + ";'> </a></span> ");
+	    });
+	    $.each([3, 5, 10, 15], function() {
+	      $('.tools').append("<a href='#colors_sketch' data-size='" + this + "' style='background: #ccc'>" + "brush size " + this + "</a> ");
+	    });
+	    $('#colors_sketch').sketch();
+	  });
+	</script>
+
+	<h1>{{ user[0] }}'s New Swing</h1>
+	<br>
+	<p>My new swing goes very, very high. <br>
+	It is {{ user[1] }} and doesn't squeak like the one at the playground does.</p>
+	<br>
+	<p>I can almost reach the sky with my swing. <br>
+	I can swing so high that I know I'll touch the clouds one day.</p>
+	<br>
+	<p>I go outside and play on the swing everyday. I have so much fun.
+	When my friends come over, we try to see who can go the highest.
+	My friend {{ user[2] }} said that my swing is better than the one at the playground.</p>
+	<br>
+	<p>I know someday I will go the highest and I will be the first one to touch the sky. I'll grab a handful of the clouds and bring it back down to show everyone I really touched the sky.</p>
+</body>
+
+<script>var pfHeaderImgUrl = '';var pfHeaderTagline = '';var pfdisableClickToDel = 0;var pfHideImages = 0;var pfImageDisplayStyle = 'right';var pfDisablePDF = 0;var pfDisableEmail = 0;var pfDisablePrint = 0;var pfCustomCSS = '';var pfBtVersion='1';(function(){var js, pf;pf = document.createElement('script');pf.type = 'text/javascript';if('https:' == document.location.protocol){js='https://pf-cdn.printfriendly.com/ssl/main.js'}else{js='http://cdn.printfriendly.com/printfriendly.js'}pf.src=js;document.getElementsByTagName('head')[0].appendChild(pf)})();</script>
+<div class="printButton">
+	<a href="http://www.printfriendly.com" style="color:#6D9F00;text-decoration:none;" class="printfriendly" onclick="window.print();return false;" title="Printer Friendly and PDF"><img style="border:none;-webkit-box-shadow:none;box-shadow:none;margin:0 6px"  src="http://cdn.printfriendly.com/pf-print-icon.gif" width="16" height="15" alt="Print Friendly Version of this page" />Print <img style="border:none;-webkit-box-shadow:none;box-shadow:none;margin:0 6px"  src="http://cdn.printfriendly.com/pf-pdf-icon.gif" width="12" height="12" alt="Get a PDF version of this webpage" />PDF</a>
 </div>
-<canvas id="colors_sketch" width="800" height="300" padding-top="50px"></canvas>
-<script type="text/javascript">
-  $(function() {
-    $.each(['#3c8d7f', '#86b460', '#cebd4e', '#d45b5b', '#5f5758', '#8D3C4A', '#000', '#fff'], function() {
-      $('.tools').append("<span><a href='#colors_sketch' data-color='" + this + "' style='width: 10px; background: " + this + ";'> </a></span> ");
-    });
-    $.each([3, 5, 10, 15], function() {
-      $('.tools').append("<a href='#colors_sketch' data-size='" + this + "' style='background: #ccc'>" + "brush size " + this + "</a> ");
-    });
-    $('#colors_sketch').sketch();
-  });
-</script>
-
-<h1>{{ user[0] }}'s New Swing</h1>
-<br>
-<p>My new swing goes very, very high. <br>
-It is {{ user[1] }} and doesn't squeak like the one at the playground does.</p>
-<br>
-<p>I can almost reach the sky with my swing. <br>
-I can swing so high that I know I'll touch the clouds one day.</p>
-<br>
-<p>I go outside and play on the swing everyday. I have so much fun.
-When my friends come over, we try to see who can go the highest.
-My friend {{ user[2] }} said that my swing is better than the one at the playground.</p>
-<br>
-<p>I know someday I will go the highest and I will be the first one to touch the sky. I'll grab a handful of the clouds and bring it back down to show everyone I really touched the sky.</p>
-
-<script>var pfHeaderImgUrl = '';var pfHeaderTagline = '';var pfdisableClickToDel = 0;var pfHideImages = 0;var pfImageDisplayStyle = 'right';var pfDisablePDF = 0;var pfDisableEmail = 0;var pfDisablePrint = 0;var pfCustomCSS = '';var pfBtVersion='1';(function(){var js, pf;pf = document.createElement('script');pf.type = 'text/javascript';if('https:' == document.location.protocol){js='https://pf-cdn.printfriendly.com/ssl/main.js'}else{js='http://cdn.printfriendly.com/printfriendly.js'}pf.src=js;document.getElementsByTagName('head')[0].appendChild(pf)})();</script><a href="http://www.printfriendly.com" style="color:#6D9F00;text-decoration:none;" class="printfriendly" onclick="window.print();return false;" title="Printer Friendly and PDF"><img style="border:none;-webkit-box-shadow:none;box-shadow:none;margin:0 6px"  src="http://cdn.printfriendly.com/pf-print-icon.gif" width="16" height="15" alt="Print Friendly Version of this page" />Print <img style="border:none;-webkit-box-shadow:none;box-shadow:none;margin:0 6px"  src="http://cdn.printfriendly.com/pf-pdf-icon.gif" width="12" height="12" alt="Get a PDF version of this webpage" />PDF</a>
