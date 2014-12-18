@@ -34,6 +34,11 @@ li {
   margin-right: 30px;
 } */
 
+.btn.btn-danger {
+  background-color: #5fb49c;
+  border-color: #5fb49c;
+}
+
 body {
   padding-top: 65px;
   background: url("https://s3.amazonaws.com/uploads.hipchat.com/39979/1226463/PrFPiTUBghJnCiE/linedpaper.png");
@@ -54,6 +59,10 @@ div#home-page {
   background-color: #414288;
 }
 
+.navbar-inverse .navbar-nav > li > a {
+  color: silver;
+}
+
 .nav-tab {
   position: relative;
   padding-top: 10px;
@@ -66,6 +75,10 @@ div#home-page {
   position: relative;
   -webkit-filter: invert(100%);
   filter: invert(100%);
+}
+
+#about-blurb {
+  line-height: 30px;
 }
 
 .storyText {
@@ -104,11 +117,12 @@ div#home-page {
 	width: 200px;
 	height: 40px;
 	line-height: 40px;
-	margin-bottom: 50px;
+  margin: 0 auto;
+  margin-bottom: 50px;
 	padding: 5px, 10px 5px 10px;
 	text-align: center;
 	border-radius: 10px;
-	background-color: black;
+	background-color: white;
 }
 
 /* beta ribbon wrapper */
