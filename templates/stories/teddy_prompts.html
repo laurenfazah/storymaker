@@ -1,10 +1,12 @@
 <ng-include src="'templates/partials/navbar.html'"></ng-include>
-<form ng-submit="updateFactory(user)">
-	<h2>Who is this story about?</h2>
-	<p><input type="text" placeholder="name" ng-model="user.name"></p>
-	<h2>What is {{ user.name }}'s favorite animal?</h2>
-	<p><input type="text" placeholder="favorite animal" ng-model="user.fav_animal"></p>
-	<h2>What is an imaginary toy name {{ tedd.name }} likes?</h2>
-	<p><input type="text" placeholder="imaginary toy name" ng-model="user.toy_name"></p>
-	<input type="submit" value="Continue To Story" ng-disabled="!(!!user.name || !!user.fav_animal  || !!user.toy_name)"/>
-</form>
+<div class="container">	
+	<form ng-submit="updateFactory(user)">
+		<h2>Who is this story about?</h2>
+		<p><input type="text" placeholder="name" ng-model="user.name"></p>
+		<h2>What is {{ user.name }}'s favorite animal?</h2>
+		<p><input type="text" placeholder="favorite animal" ng-model="user.fav_animal"></p>
+		<h2>What is an imaginary toy name {{ tedd.name }} likes?</h2>
+		<p><input type="text" placeholder="imaginary toy name" ng-model="user.toy_name"></p>
+		<input type="submit" value="Continue To Story" ng-disabled="!(!!user.name || !!user.fav_animal  || !!user.toy_name)" class="btn btn-danger"/>
+	</form>
+</div>

@@ -5,16 +5,53 @@
 
 a {
 	cursor: pointer;
+  text-decoration: none;
+  color: #414288;
+}
+ 
+a:hover {
+  cursor: pointer;
+  text-decoration: none;
+  color: #5fb49c;
 }
 
+/*a:visited {
+  cursor: pointer;
+  text-decoration: none;
+  color: #682d63;
+}*/
+
+h1 {
+  font-family: 'Shadows Into Light Two', cursive;
+}
+
+li {
+  list-style-type: none;
+  line-height: 80px;
+}
+
+/*li > img {
+  margin-right: 30px;
+} */
+
 body {
-  padding: 50px 50px 50px 50px;
+  padding-top: 65px;
   background: url("https://s3.amazonaws.com/uploads.hipchat.com/39979/1226463/PrFPiTUBghJnCiE/linedpaper.png");
+  background-repeat: repeat;
+}
+
+div#home-page {
+  background: url("https://s3.amazonaws.com/uploads.hipchat.com/39979/1226463/cKJXAGZ6vdfd0It/tree_bark.png");
   background-repeat: repeat;
 }
 
 .navbar.navbar-inverse.navbar-fixed-top {
   height: 65px;
+  background-color: #414288;
+}
+
+.navbar-inverse .navbar-nav > .active > a, .navbar-inverse .navbar-nav > .active > a:hover, .navbar-inverse .navbar-nav > .active > a:focus {
+  background-color: #414288;
 }
 
 .nav-tab {
@@ -32,7 +69,6 @@ body {
 }
 
 .storyText {
-  font-family: 'Fresca', sans-serif;
   font-size: 1.25em;
 }
 
