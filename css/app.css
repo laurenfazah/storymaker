@@ -45,9 +45,12 @@ body {
   background-repeat: repeat;
 }
 
-div#home-page {
+div#home-page, #about-page {
+  /*background-color: white;*/
   background: url("https://s3.amazonaws.com/uploads.hipchat.com/39979/1226463/cKJXAGZ6vdfd0It/tree_bark.png");
   background-repeat: repeat;
+  border-left: 10px #5fb49c solid;
+  border-right: 10px #5fb49c solid;
 }
 
 .navbar.navbar-inverse.navbar-fixed-top {
