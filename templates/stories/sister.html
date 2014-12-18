@@ -1,32 +1,37 @@
 <ng-include src="'templates/partials/navbar.html'"></ng-include>
 
-<!-- sketch.js -->
+<body class="story-body">
 
-<div class="tools">
+	<!-- sketch.js -->
+	<div class="tools">
+	</div>
+	<canvas id="colors_sketch" width="800" height="300" padding-top="50px"></canvas>
+	<script type="text/javascript">
+	  $(function() {
+	    $.each(['#3c8d7f', '#86b460', '#cebd4e', '#d45b5b', '#5f5758', '#8D3C4A', '#000', '#fff'], function() {
+	      $('.tools').append("<span><a href='#colors_sketch' data-color='" + this + "' style='width: 10px; background: " + this + ";'> </a></span> ");
+	    });
+	    $.each([3, 5, 10, 15], function() {
+	      $('.tools').append("<a href='#colors_sketch' data-size='" + this + "' style='background: #ccc'>" + "brush size " + this + "</a> ");
+	    });
+	    $('#colors_sketch').sketch();
+	  });
+	</script>
+
+	<h1>{{ user[0] }}'s Baby Sister</h1>
+
+	<p>My dad woke me up saying "{{ user[0] }}, come here! We need to take you to Grandma’s house." He had to take mom to the hospital.</p>
+	<br>
+	<p>When he picked me up, he said he had a surprise for me. I thought it was a {{ user[1] }}, but dad said "No, it's a baby sister."</p>
+	<br>
+	<p>He took me to the hospital to see my mommy and my new baby sister. When I saw her, I thought she was a baby doll. I was her big {{ user[2] }} now!</p>
+	<br>
+	<p>When my mom and my baby sister came home, I helped my mom change my sister's diaper and feed her. I was mom’s little helper. I was my baby’s big {{ user[2] }}.</p>
+	<br>
+	<p>I love my new baby sister and she loves me too!</p>
+</body>
+
+<script>var pfHeaderImgUrl = '';var pfHeaderTagline = '';var pfdisableClickToDel = 0;var pfHideImages = 0;var pfImageDisplayStyle = 'right';var pfDisablePDF = 0;var pfDisableEmail = 0;var pfDisablePrint = 0;var pfCustomCSS = '';var pfBtVersion='1';(function(){var js, pf;pf = document.createElement('script');pf.type = 'text/javascript';if('https:' == document.location.protocol){js='https://pf-cdn.printfriendly.com/ssl/main.js'}else{js='http://cdn.printfriendly.com/printfriendly.js'}pf.src=js;document.getElementsByTagName('head')[0].appendChild(pf)})();</script>
+<div class="printButton">
+	<a href="http://www.printfriendly.com" style="color:#6D9F00;text-decoration:none;" class="printfriendly" onclick="window.print();return false;" title="Printer Friendly and PDF"><img style="border:none;-webkit-box-shadow:none;box-shadow:none;margin:0 6px"  src="http://cdn.printfriendly.com/pf-print-icon.gif" width="16" height="15" alt="Print Friendly Version of this page" />Print <img style="border:none;-webkit-box-shadow:none;box-shadow:none;margin:0 6px"  src="http://cdn.printfriendly.com/pf-pdf-icon.gif" width="12" height="12" alt="Get a PDF version of this webpage" />PDF</a>
 </div>
-<canvas id="colors_sketch" width="800" height="300" padding-top="50px"></canvas>
-<script type="text/javascript">
-  $(function() {
-    $.each(['#3c8d7f', '#86b460', '#cebd4e', '#d45b5b', '#5f5758', '#8D3C4A', '#000', '#fff'], function() {
-      $('.tools').append("<span><a href='#colors_sketch' data-color='" + this + "' style='width: 10px; background: " + this + ";'> </a></span> ");
-    });
-    $.each([3, 5, 10, 15], function() {
-      $('.tools').append("<a href='#colors_sketch' data-size='" + this + "' style='background: #ccc'>" + "brush size " + this + "</a> ");
-    });
-    $('#colors_sketch').sketch();
-  });
-</script>
-
-<h1>{{ user[0] }}'s Baby Sister</h1>
-
-<p>My dad woke me up saying "{{ user[0] }}, come here! We need to take you to Grandma’s house." He had to take mom to the hospital.</p>
-<br>
-<p>When he picked me up, he said he had a surprise for me. I thought it was a {{ user[1] }}, but dad said "No, it's a baby sister."</p>
-<br>
-<p>He took me to the hospital to see my mommy and my new baby sister. When I saw her, I thought she was a baby doll. I was her big {{ user[2] }} now!</p>
-<br>
-<p>When my mom and my baby sister came home, I helped my mom change my sister's diaper and feed her. I was mom’s little helper. I was my baby’s big {{ user[2] }}.</p>
-<br>
-<p>I love my new baby sister and she loves me too!</p>
-
-<script>var pfHeaderImgUrl = '';var pfHeaderTagline = '';var pfdisableClickToDel = 0;var pfHideImages = 0;var pfImageDisplayStyle = 'right';var pfDisablePDF = 0;var pfDisableEmail = 0;var pfDisablePrint = 0;var pfCustomCSS = '';var pfBtVersion='1';(function(){var js, pf;pf = document.createElement('script');pf.type = 'text/javascript';if('https:' == document.location.protocol){js='https://pf-cdn.printfriendly.com/ssl/main.js'}else{js='http://cdn.printfriendly.com/printfriendly.js'}pf.src=js;document.getElementsByTagName('head')[0].appendChild(pf)})();</script><a href="http://www.printfriendly.com" style="color:#6D9F00;text-decoration:none;" class="printfriendly" onclick="window.print();return false;" title="Printer Friendly and PDF"><img style="border:none;-webkit-box-shadow:none;box-shadow:none;margin:0 6px"  src="http://cdn.printfriendly.com/pf-print-icon.gif" width="16" height="15" alt="Print Friendly Version of this page" />Print <img style="border:none;-webkit-box-shadow:none;box-shadow:none;margin:0 6px"  src="http://cdn.printfriendly.com/pf-pdf-icon.gif" width="12" height="12" alt="Get a PDF version of this webpage" />PDF</a>
