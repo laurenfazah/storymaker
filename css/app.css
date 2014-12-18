@@ -21,8 +21,11 @@ a {
 	border-radius: 100%;
 }
 
-canvas {
-	/*border: 1px solid black;*/
+ canvas {
+  border: 10px dotted black;
+  /*position: relative;*/
+  margin-top: 10px;
+  margin-right: 50px;
 }
 
 .printButton {
