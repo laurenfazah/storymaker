@@ -51,16 +51,38 @@ body {
 }
 
 div#home-page, #about-page {
-  /*background-color: white;*/
-  background: url("https://s3.amazonaws.com/uploads.hipchat.com/39979/1226463/cKJXAGZ6vdfd0It/tree_bark.png");
-  background-repeat: repeat;
-  border-left: 10px #5fb49c solid;
-  border-right: 10px #5fb49c solid;
+ /* background: url("https://s3.amazonaws.com/uploads.hipchat.com/39979/1226463/cKJXAGZ6vdfd0It/tree_bark.png");
+  background-repeat: repeat;*/
+}
+
+div#home-page {
+  text-align: center;
+}
+
+div#home-title {
+  background-color: rgba(104, 45, 99, 0.1);
+  height: 400px;
+  width: 100%;
+  border: 10px #5fb49c solid;
+  display: table;
+  vertical-align: middle;
 }
 
 #app-title {
-  font-size: 78px;
+  line-height: 400px;
+  font-size: 86px;
+  text-align: center;
 }
+
+#app-subtitle {
+  padding-top: 50px;
+  padding-bottom: 50px;
+}
+
+#app-subtitle>h2 {
+  font-size: 54px;
+}
+
 
 .navbar.navbar-inverse.navbar-fixed-top {
   height: 65px;
