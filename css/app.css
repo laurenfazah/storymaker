@@ -1,9 +1,27 @@
-body {
-  padding: 50px 50px 50px 50px;
+* {
+  font-family: 'Mallanna', sans-serif;
+  font-size: 110%;
 }
 
 a {
 	cursor: pointer;
+}
+
+body {
+  padding: 50px 50px 50px 50px;
+  background: url("https://s3.amazonaws.com/uploads.hipchat.com/39979/1226463/PrFPiTUBghJnCiE/linedpaper.png");
+  background-repeat: repeat;
+}
+
+.storyText {
+  font-family: 'Fresca', sans-serif;
+  font-size: 1.25em;
+}
+
+.storyText > h1 {
+  font-family: 'Shadows Into Light Two', cursive;
+  font-size: 2em;
+  text-align: center;
 }
 
 .tools a {
@@ -38,6 +56,8 @@ a {
 	border-radius: 10px;
 	background-color: black;
 }
+
+/* beta ribbon wrapper */
 
 .corner-ribbon-wrapper {
 	z-index: 9999999999;
@@ -95,14 +115,4 @@ a.corner-ribbon{
 }
 .corner-ribbon:after {
   right: 0;
-}
-
-/*body {
-  background: url('https://s3.amazonaws.com/uploads.hipchat.com/39979/1226463/LArSOxoEeyOLmY5/156H.jpg');
-  background-size: cover;
-}
-*/
-body {
-  background: url("https://s3.amazonaws.com/uploads.hipchat.com/39979/1226463/PrFPiTUBghJnCiE/linedpaper.png");
-  background-repeat: repeat;
 }
