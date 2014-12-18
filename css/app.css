@@ -5,11 +5,40 @@
 
 a {
 	cursor: pointer;
+  text-decoration: none;
+  color: #414288;
 }
 
+a:hover {
+  cursor: pointer;
+  text-decoration: none;
+  color: #5fb49c;
+}
+
+/*a:visited {
+  cursor: pointer;
+  text-decoration: none;
+  color: #682d63;
+}
+*/
+li {
+  list-style-type: none;
+  line-height: 80px;
+}
+
+/*li > img {
+  margin-right: 30px;
+}
+*/
 body {
-  padding: 50px 50px 50px 50px;
+  padding: 65px 50px 50px 50px;
   background: url("https://s3.amazonaws.com/uploads.hipchat.com/39979/1226463/PrFPiTUBghJnCiE/linedpaper.png");
+  background-repeat: repeat;
+}
+
+body#home-page {
+  padding: 65px 50px 50px 50px;
+  background: url("https://s3.amazonaws.com/uploads.hipchat.com/39979/1226463/FrCdvKIpXYiLO5j/congruent_pentagon.png");
   background-repeat: repeat;
 }
 
@@ -31,8 +60,11 @@ body {
   filter: invert(100%);
 }
 
+#story-list {
+
+}
+
 .storyText {
-  font-family: 'Fresca', sans-serif;
   font-size: 1.25em;
 }
 
