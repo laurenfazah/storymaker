@@ -5,7 +5,7 @@
 	<!-- sketch.js -->
 	<div class="tools">
 	</div>
-	<canvas id="colors_sketch" width="800" height="300" padding-top="50px"></canvas>
+	<canvas id="colors_sketch" width="1180" height="300" padding-top="50px"></canvas>
 	<script type="text/javascript">
 	  $(function() {
 	    $.each(['#3c8d7f', '#86b460', '#cebd4e', '#d45b5b', '#5f5758', '#8D3C4A', '#000', '#fff'], function() {
@@ -17,24 +17,25 @@
 	    $('#colors_sketch').sketch();
 	  });
 	</script>
-
-	<h1>{{ user[0] }}'s Day at the Beach</h1>
-	<br>
-	<p>My mommy and daddy took us to the beach. We had so much fun.
-	We swam. <br>
-	We played in the sand. <br>
-	We even buried dad in the sand. <br>
-	We had so much fun until it was time for lunch. Mom packed our favorite foods...peanut butter and jelly sandwiches, and ham and cheese sandwiches and of course {{ user[1] }}.</p>
-	<br>
-	<p>We started to eat our lunch and... <br>
-	'Whissh' <br>
-	The seagulls flew down, landed right next to us and took our sandwiches!	We looked at mom and dad and we all began to laugh! </p>
-	<br>
-	<p>Dad took us to the snack bar and we had lunch there.	On the way home from the beach, we stopped for ice cream. I picked out {{ user[2] }}. As we were eating the ice cream we looked at each other and we burst out laughing! We couldn’t stop!</p>
-	<br>
-	<p>It was such a great day at the beach. <br>
-	Dad said we can go back again next week! <br>
-	Mom said absolutely no sandwiches!</p>
+	<div class="storyText">
+		<h1>{{ user[0] }}'s Day at the Beach</h1>
+		<br>
+		<p>My mommy and daddy took us to the beach. We had so much fun.
+		We swam. <br>
+		We played in the sand. <br>
+		We even buried dad in the sand. <br>
+		We had so much fun until it was time for lunch. Mom packed our favorite foods...peanut butter and jelly sandwiches, and ham and cheese sandwiches and of course {{ user[1] }}.</p>
+		<br>
+		<p>We started to eat our lunch and... <br>
+		'Whissh' <br>
+		The seagulls flew down, landed right next to us and took our sandwiches!	We looked at mom and dad and we all began to laugh! </p>
+		<br>
+		<p>Dad took us to the snack bar and we had lunch there.	On the way home from the beach, we stopped for ice cream. I picked out {{ user[2] }}. As we were eating the ice cream we looked at each other and we burst out laughing! We couldn’t stop!</p>
+		<br>
+		<p>It was such a great day at the beach. <br>
+		Dad said we can go back again next week! <br>
+		Mom said absolutely no sandwiches!</p>
+	</div>
 </body>
 
 <script>var pfHeaderImgUrl = '';var pfHeaderTagline = '';var pfdisableClickToDel = 0;var pfHideImages = 0;var pfImageDisplayStyle = 'right';var pfDisablePDF = 0;var pfDisableEmail = 0;var pfDisablePrint = 0;var pfCustomCSS = '';var pfBtVersion='1';(function(){var js, pf;pf = document.createElement('script');pf.type = 'text/javascript';if('https:' == document.location.protocol){js='https://pf-cdn.printfriendly.com/ssl/main.js'}else{js='http://cdn.printfriendly.com/printfriendly.js'}pf.src=js;document.getElementsByTagName('head')[0].appendChild(pf)})();</script>

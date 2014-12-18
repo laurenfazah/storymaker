@@ -6,5 +6,5 @@
 	<p><input type="text" placeholder="favorite color" ng-model="user.fav_color"></p>
 	<h2>What's a name of one of {{ user.name }}'s friends?</h2>
 	<p><input type="text" placeholder="friend's name" ng-model="user.friend_name"></p>
-	<input type="submit" value="Continue To Story" />
+	<input type="submit" value="Continue To Story" ng-disabled="!(!!user.name || !!user.fav_color  || !!user.friend_name)"/>
 </form>
